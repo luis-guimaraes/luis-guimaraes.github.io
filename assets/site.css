@@ -1,0 +1,42 @@
+/* Página do Luís Guimarães: só o que o kit (system.css, layout.css) não tem. Usa apenas os tokens do kit. */
+
+/* hero sem retrato: as afiliações no lugar da fotografia, num cartão plano */
+.hero__media--card { display: flex; align-items: flex-end; background: var(--surface); padding: var(--s-8); }
+.affil { list-style: none; margin: 0; padding: 0; width: 100%; }
+.affil li { display: grid; gap: var(--s-1); padding-block: var(--s-5); border-top: 1px solid var(--line); }
+.affil li:first-child { border-top: 0; }
+.affil__name { font-family: var(--font-display); font-size: var(--t-h3, 1.5rem); line-height: 1.15; }
+.affil__role { color: var(--ink); }
+
+/* linhas de investigação: referências por baixo do texto */
+.line-card { display: flex; flex-direction: column; gap: var(--s-3); }
+.line-card .t-label { margin-top: var(--s-4); }
+.refs { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-3); font-size: var(--t-small); }
+.refs__venue { display: block; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* listas de publicações: ano à esquerda, referência à direita */
+.pubs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.pubs > li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: var(--s-5); padding-block: var(--s-4); border-bottom: 1px solid var(--line); }
+.pubs__year { color: var(--muted); font-variant-numeric: tabular-nums; padding-top: .15em; }
+.pubs__body { display: grid; gap: var(--s-1); }
+.pubs__title { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.3; }
+.pubs__meta { color: var(--ink); font-size: var(--t-small); }
+.pubs-group { margin-top: var(--s-9); margin-bottom: var(--s-5); }
+@media (max-width: 639px) { .pubs > li { grid-template-columns: 1fr; gap: var(--s-1); } }
+
+/* orientação, ensino, serviço */
+.rows__name small { display: block; font-weight: 400; color: var(--muted); font-size: var(--t-small); margin-top: var(--s-1); }
+.note { margin-top: var(--s-6); color: var(--muted); }
+.teach-col h3 { margin-bottom: var(--s-4); }
+.teach-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-3); }
+.teach-col li { padding-bottom: var(--s-3); border-bottom: 1px solid var(--line); }
+.service p { max-width: 46ch; }
+
+/* página de publicações */
+.subpage .section { padding-top: calc(var(--s-10, 120px) + var(--s-6)); }
+
+@media (max-width: 1023px) {
+  .hero--split .hero__media--card { flex: none; height: auto; min-height: 0; padding: var(--s-6); }
+  .affil li { padding-block: var(--s-4); }
+}
+@media (max-width: 639px) { .hero--split .hero__media--card { display: none; } }

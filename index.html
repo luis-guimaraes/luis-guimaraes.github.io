@@ -1,43 +1,237 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="tonal" data-motion>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luís Guimarães — Associate Professor, FEUP</title>
-<meta name="description" content="Luís Guimarães, Associate Professor of Industrial Engineering and Management at the Faculty of Engineering, University of Porto. Operations research, production planning, asset management.">
-<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luís Guimarães: operations research for industrial decisions, FEUP</title>
+<meta name="description" content="Luís Guimarães, Associate Professor at FEUP and senior researcher at INESC TEC, builds optimisation models and decision-support systems for production, supply chains and energy assets.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Luís Guimarães: operations research for industrial decisions, FEUP">
+<meta property="og:description" content="Optimisation models and decision-support systems for production, supply chains and energy assets, developed with companies and used in their daily planning.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#dfdedb">
+<link rel="canonical" href="https://luis-guimaraes.github.io/">
+<link rel="alternate" hreflang="en" href="https://luis-guimaraes.github.io/">
+<link rel="alternate" hreflang="pt" href="https://luis-guimaraes.github.io/pt/">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<meta name="robots" content="noindex"><link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
 <style>
-  :root { --ink:#1b2430; --muted:#5b6675; --line:#e3e7ec; --accent:#0b5cad; --bg:#fbfbfa; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:17px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; }
-  main { max-width:680px; margin:0 auto; padding:14vh 28px 64px; }
-  .tag { font:600 12px/1 system-ui,-apple-system,"Segoe UI",sans-serif; letter-spacing:.12em;
-         text-transform:uppercase; color:var(--accent); }
-  h1 { font-size:clamp(34px,6vw,46px); line-height:1.1; margin:14px 0 6px; font-weight:600; }
-  .role { color:var(--muted); margin:0 0 28px; }
-  hr { border:0; border-top:1px solid var(--line); margin:28px 0; }
-  p { margin:0 0 14px; }
-  nav { display:flex; flex-wrap:wrap; gap:10px 22px; font:500 15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; }
-  a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
-  a:hover, a:focus-visible { border-bottom-color:currentColor; }
-  .note { margin-top:40px; font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--muted); }
+@font-face { font-family: "Newsreader"; src: url("assets/fonts/newsreader-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("assets/fonts/newsreader-latin-opsz-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Hanken Grotesk"; src: url("assets/fonts/hanken-grotesk-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+:root {
+  --p-bg: #dfdedb; --p-surface: #d3d2ce; --p-ink: #26251e; --p-muted: #5a5850;
+  --p-accent: #2456d6; --p-accent-ink: #ffffff; --p-action: #2456d6; --p-action-ink: #ffffff;
+  --p-inv-bg: #26251e; --p-inv-surface: #313029; --p-inv-ink: #dfdedb; --p-inv-muted: #9e9d99;
+  --p-inv-accent: #dfdedb; --p-inv-accent-ink: #26251e; --p-inv-action: #dfdedb; --p-inv-action-ink: #26251e;
+  --font-display: "Newsreader", Georgia, serif;
+  --font-text: "Hanken Grotesk", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.018em;
+  --display-tracking-xl: -0.025em;
+  --ly-scale: 1.06;
+}
 </style>
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js"><link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
 </head>
 <body>
-<main>
-  <div class="tag">Site under construction</div>
-  <h1>Luís Guimarães</h1>
-  <p class="role">Associate Professor, Department of Industrial Engineering and Management, Faculty of Engineering, University of Porto · Senior Researcher, INESC TEC · Co-founder, LTPlabs</p>
-  <p>Research on operations research and decision support for industrial systems: production planning and scheduling, production–distribution and inventory-routing, and asset management in energy systems.</p>
-  <hr>
-  <nav aria-label="Profiles">
-    <a href="mailto:lguimaraes@fe.up.pt">lguimaraes@fe.up.pt</a>
-    <a href="https://orcid.org/0000-0002-6293-5691">ORCID</a>
-    <a href="https://scholar.google.com/citations?user=n98JP14AAAAJ">Google Scholar</a>
-    <a href="https://www.scopus.com/authid/detail.uri?authorId=37077129000">Scopus</a>
-  </nav>
-  <p class="note">A full CV page, generated from a curated database, will replace this placeholder soon.</p>
+<!-- type: service (personal academic page)
+     deal: palette stone-blueprint, type newsreader, radius soft, hero split, nav split, close type, footer columns,
+     rhythm dark-band, buttons tonal, mark wordmark; moment word-highlight (statement section).
+     Gerado por scripts/gerar_site.py a partir de data/ — não editar à mão. -->
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#research">Research</a></div>
+      <div class="nav__item"><a class="nav__link" href="#practice">Practice</a></div>
+      <div class="nav__item"><a class="nav__link" href="#publications">Publications</a></div>
+      <div class="nav__item"><a class="nav__link" href="#supervision">Supervision</a></div>
+      <div class="nav__item"><a class="nav__link" href="#teaching">Teaching</a></div>
+    </nav>
+    <a class="nav__logo" href="#top">Luís Guimarães</a>
+    <div class="nav__actions">
+      <a class="nav__link" href="pt/" hreflang="pt" lang="pt" aria-label="Português">PT</a>
+      <a class="btn btn--primary" href="mailto:lguimaraes@fe.up.pt">Email Luís</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <p class="hero__kicker">Luís Guimarães · Associate Professor, FEUP</p>
+        <h1 id="hero-h">Operations research for industrial decisions</h1>
+        <p class="hero__lead">Optimisation models and decision-support systems for production, supply chains and energy assets, developed with companies and used in their daily planning.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:lguimaraes@fe.up.pt">Email Luís<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+          <a class="btn btn--secondary" href="#publications">See the publications</a>
+        </div>
+        <dl class="hero-facts">
+<div><dt>R&amp;D projects</dt><dd>37 since 2010, 21 with companies</dd></div><div><dt>Doctoral theses</dt><dd>3 completed, 3 in progress</dd></div><div><dt>Book</dt><dd>The Analytics Sandwich, 2024</dd></div>        </dl>
+      </div>
+      <!-- retrato em falta: templates/web/img/retrato.jpg. Até lá, as afiliações ocupam o lugar da fotografia. -->
+      <div class="hero__media hero__media--card span-6 start-7">
+        <ul class="affil">
+<li><span class="affil__name">Faculty of Engineering, University of Porto</span><span class="affil__role">Associate Professor, Industrial Engineering and Management</span></li><li><span class="affil__name">INESC TEC</span><span class="affil__role">Senior researcher, Centre for Industrial Engineering and Management</span></li><li><span class="affil__name">LTPlabs</span><span class="affil__role">Co-founder, 2014</span></li>        </ul>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="research-h">Three lines of research. <span class="muted">Each grew out of projects with industry.</span></h2></div>
+      <div class="grid grid--top">
+        <article class="card card--open span-4 line-card">
+          <h3>Plans production in process industries</h3>
+          <p>Lot-sizing and scheduling models for beverages, glass and pulp and paper, from the long-term planning system built with Super Bock to dispatching rules learned from data.</p>
+          <p class="t-label muted">Key papers</p>
+          <ul class="refs"><li><a class="link" href="https://doi.org/10.1016/j.ejor.2013.04.030"><span class="refs__venue">EJOR 2013</span> Pricing, relaxing and fixing under lot sizing and scheduling</a></li><li><a class="link" href="https://doi.org/10.1016/j.omega.2016.04.004"><span class="refs__venue">Omega 2017</span> Tactical production and distribution planning with dependency issues on the production process</a></li></ul>
+        </article>
+        <article class="card card--open span-4 line-card">
+          <h3>Routes deliveries and stock across supply chains</h3>
+          <p>Production-routing and inventory-routing problems for food retail and distribution, solved at the size of a real network.</p>
+          <p class="t-label muted">Key papers</p>
+          <ul class="refs"><li><a class="link" href="https://doi.org/10.1016/j.omega.2018.07.006"><span class="refs__venue">Omega 2019</span> Solving a large multi-product production-routing problem with delivery time windows</a></li><li><a class="link" href="https://doi.org/10.1016/j.tre.2018.03.004"><span class="refs__venue">Transportation Research Part E 2018</span> The time window assignment vehicle routing problem with product dependent deliveries</a></li></ul>
+        </article>
+        <article class="card card--open span-4 line-card">
+          <h3>Schedules maintenance of energy assets</h3>
+          <p>Health indices, maintenance policies and budget allocation for power transformers, hydropower and wind, with E-Redes, EDP and three European projects.</p>
+          <p class="t-label muted">Key papers</p>
+          <ul class="refs"><li><a class="link" href="https://doi.org/10.1016/j.ress.2021.107768"><span class="refs__venue">Reliability Engineering &amp; System Safety 2021</span> Resource definition and allocation for a multi-asset portfolio with heterogeneous degradation</a></li></ul>
+<p class="t-label muted">European projects</p>
+          <p class="t-small">XFLEX · EU-SCORES · InteGrid</p>        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section statement" id="statement" data-moment="word-highlight" aria-label="Research with industry">
+    <div class="wrap">
+      <p class="t-label">Research with industry</p>
+      <p class="mo-wh__text">Of 37 research projects, 21 were funded by companies, and the planning systems built in them are <strong>used by planners</strong> in beverages, retail and energy.</p>
+    </div>
+  </section>
+
+  <section class="section ground-inverse" id="practice" aria-labelledby="practice-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head"><h2 id="practice-h">From models to daily use</h2><p>Research that leaves the university as a book, a company and systems that planners run.</p></div>
+      </div>
+      <ul class="rows span-6 start-7">
+        <li><span class="rows__name">The Analytics Sandwich (2024)<small>A book for executives on combining human judgement with analytics and AI, written with Bernardo Almada-Lobo, Pedro Amorim and Teresa Bianchi de Aguiar.</small></span><a class="rows__value link" href="https://theanalyticssandwich.ltplabs.com">See the book</a></li>
+        <li><span class="rows__name">LTPlabs, co-founded in 2014<small>A spin-off of INESC TEC that builds decision-intelligence and analytics systems for companies.</small></span><a class="rows__value link" href="https://ltplabs.com">See LTPlabs</a></li>
+        <li><span class="rows__name">Planning systems in industry<small>Annual production and distribution budgets in the beverage industry, and shelf-space planning for a food retailer, finalist of the INFORMS Daniel H. Wagner Prize in 2016.</small></span><span class="rows__value"></span></li>
+        <li><span class="rows__name">Guidelines for the power sector<small>Member of CIGRE working group B4.89 on condition monitoring and predictive maintenance of HVDC converter stations.</small></span><span class="rows__value"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section g2" id="publications" aria-labelledby="pubs-h">
+    <div class="wrap">
+      <div class="group">
+        <div class="section-head section-head--split">
+          <div><h2 id="pubs-h">Selected publications. <span class="muted">21 journal articles, 16 papers in international proceedings and 2 book chapters.</span></h2>
+</div>
+          <a class="btn btn--secondary" href="publications.html">See all publications</a>
+        </div>
+        <ol class="pubs">
+          <li><span class="pubs__year">2013</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.ejor.2013.04.030">Pricing, relaxing and fixing under lot sizing and scheduling</a></span><span class="pubs__meta">Luís Guimarães, Diego Klabjan, Bernardo Almada-Lobo. <em>European Journal of Operational Research</em> 230, 399-411.</span></span></li>
+          <li><span class="pubs__year">2014</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.ejor.2014.05.018">Modeling lotsizing and scheduling problems with sequence dependent setups</a></span><span class="pubs__meta">Luís Guimarães, Diego Klabjan, Bernardo Almada-Lobo. <em>European Journal of Operational Research</em> 239, 644-662.</span></span></li>
+          <li><span class="pubs__year">2014</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1287/inte.2014.0747">Annual Distribution Budget in the Beverage Industry: a case study</a></span><span class="pubs__meta">Luis Guimarães, Pedro Amorim, Fabricio Sperandio, Fábio Moreira, Bernardo Almada-Lobo. <em>Interfaces</em> 44, 605-626.</span></span></li>
+          <li><span class="pubs__year">2016</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1287/inte.2016.0859">Using Analytics to Enhance a Food Retailer&#39;s Shelf-Space Management</a></span><span class="pubs__meta">Teresa Bianchi-Aguiar, Elsa Silva, Luis Guimarães, Maria Antónia Carravilla, José Fernando Oliveira, João Gunther Amaral, et al.. <em>Interfaces</em> 46, 424-443.</span></span></li>
+        </ol>
+      </div>
+      <div class="group">
+        <ol class="pubs">
+          <li><span class="pubs__year">2017</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.omega.2016.04.004">Tactical production and distribution planning with dependency issues on the production process</a></span><span class="pubs__meta">Wenchao Wei, Luis Guimarães, Pedro Amorim, Bernardo Almada-Lobo. <em>Omega</em> 67, 99-114.</span></span></li>
+          <li><span class="pubs__year">2018</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.tre.2018.03.004">The time window assignment vehicle routing problem with product dependent deliveries</a></span><span class="pubs__meta">Fábio Neves-Moreira, Luis Guimarães, Bernardo Almada-Lobo, Diogo Pereira da Silva, Pedro Amorim. <em>Transportation Research Part E: Logistics and Transportation Review</em> 116, 163-183.</span></span></li>
+          <li><span class="pubs__year">2019</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.omega.2018.07.006">Solving a large multi-product production-routing problem with delivery time windows</a></span><span class="pubs__meta">Fábio Neves-Moreira, Bernardo Almada-Lobo, Luis Guimarães, Jean Francois Cordeau, Raf Jans. <em>Omega</em> 86, 154-172.</span></span></li>
+          <li><span class="pubs__year">2021</span><span class="pubs__body"><span class="pubs__title"><a class="link" href="https://doi.org/10.1016/j.ress.2021.107768">Resource definition and allocation for a multi-asset portfolio with heterogeneous degradation</a></span><span class="pubs__meta">Luis Dias, Armando Leitão, Luis Guimarães. <em>Reliability Engineering &amp; System Safety</em> 213.</span></span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="supervision" aria-labelledby="sup-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="sup-h">Doctoral supervision. <span class="muted">3 theses completed, 3 in progress, 50 master&#39;s dissertations and 7 postdoctoral researchers.</span></h2></div>
+      <div class="grid grid--top">
+        <div class="span-6">
+          <h3 class="t-label muted">Completed</h3>
+          <ul class="rows"><li><span class="rows__name">Xavier António Reis Andrade<small>Product line selection in the fast-moving consumer goods industry</small></span><span class="rows__value">2022</span></li><li><span class="rows__name">Luis Filipe da Silva Magalhães Dias<small>Integrating asset management decisions on a multi-dependent portfolio</small></span><span class="rows__value">2022</span></li><li><span class="rows__name">Fábio Neves Seabra da Silva Moreira<small>On Improving Supply Chain Performance Through Integrated Vehicle Routing Problems (co-supervisor)</small></span><span class="rows__value">2018</span></li></ul>
+        </div>
+        <div class="span-6">
+          <h3 class="t-label muted">In progress</h3>
+          <ul class="rows"><li><span class="rows__name">Nuno André Azevedo Marques<small>Explainable Artificial Intelligence for the next-generation manufacturing: applications in scheduling and process control (co-supervisor)</small></span><span class="rows__value">2021</span></li><li><span class="rows__name">Luciana Yamada<small>Decision models for managing hybrid renewable energy systems.</small></span><span class="rows__value">2021</span></li><li><span class="rows__name">Dora Alves<small>Value-based budget allocation for railway turnout portfolios (caso Infraestruturas de Portugal)</small></span><span class="rows__value"></span></li></ul>
+          <p class="t-small note">Prospective PhD students in these three lines can email a CV and a one-page research idea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="teaching" aria-labelledby="teach-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="teach-h">Teaching</h2><p>Courses at FEUP, executive education for companies and an MBA week in São Paulo.</p></div>
+      <div class="grid grid--top">
+        <div class="card card--open span-4 teach-col"><h3>At FEUP</h3><ul><li>Operations Research, Master in Mechanical Engineering</li><li>Decision Support Systems, Master in Industrial Engineering and Management</li><li>Asset Management and Maintenance, Master in Industrial Engineering and Management</li><li>Director of the specialisation course in Industrial and Logistics Systems Engineering (2022 to now)</li></ul></div>
+        <div class="card card--open span-4 teach-col"><h3>Executive education</h3><ul><li>Porto Business School programmes for Sonae, BPI and Galp</li><li>INESC TEC programmes on asset management (Campus REN) and Industry 4.0</li></ul></div>
+        <div class="card card--open span-4 teach-col"><h3>International</h3><ul><li>Insper, São Paulo: Data Analysis for Operations Management, MBA International Week, 2023</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="recognition" aria-labelledby="rec-h">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head"><h2 id="rec-h">Awards and service</h2></div>
+        <ul class="rows"><li><span class="rows__name">Best PhD thesis in operations research in Portugal, APDIO, 2013/2014</span></li><li><span class="rows__name">Isabel Themido Award, APDIO, 2015</span></li><li><span class="rows__name">Finalist, INFORMS Daniel H. Wagner Prize for Excellence in Operations Research Practice, 2016</span></li><li><span class="rows__name">Augusto Queirós Novais Award, APDIO, 2018–2020</span></li><li><span class="rows__name">Pedagogical Award, Faculty of Engineering, University of Porto, 2019</span></li></ul>
+      </div>
+      <div class="span-6 start-7 service">
+        <h3 class="t-label muted">Service</h3>
+        <p>102 thesis juries, 7 of them doctoral and 10 outside FEUP; programme committees of SBPO (2015 to 2021) and IO 2019; reviewer for the European Journal of Operational Research, Computers &amp; Operations Research and Annals of Operations Research.</p>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="footer closing" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Email Luís about research or supervision</h2>
+        <p>Department of Industrial Engineering and Management, FEUP, Rua Dr. Roberto Frias, Porto.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="mailto:lguimaraes@fe.up.pt">Email Luís<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="#top">Luís Guimarães</a>
+          <p class="footer__lede">Operations research for production, supply chains and energy assets.</p>
+        </div>
+        <div class="span-3 start-7 footer__col"><h3>This page</h3><ul>
+          <li><a href="#research">Research</a></li><li><a href="#practice">Practice</a></li>
+          <li><a href="#publications">Publications</a></li><li><a href="#supervision">Supervision</a></li><li><a href="#teaching">Teaching</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Profiles</h3><ul>
+          <li><a href="https://orcid.org/0000-0002-6293-5691">ORCID</a></li><li><a href="https://scholar.google.com/citations?user=n98JP14AAAAJ">Google Scholar</a></li><li><a href="https://www.scopus.com/authid/detail.uri?authorId=37077129000">Scopus</a></li></ul></div>
+      </div>
+      <div class="footer__legal"><span>&copy; 2026 Luís Guimarães</span></div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
 </body>
 </html>
